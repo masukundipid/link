@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Mahasiswa Undip Id</title>
+    
+    <link rel="icon" href="https://lh3.googleusercontent.com/u/0/d/1Z1Pk5fW79Ytk4Bn-umtBmLKZ0tMxc7uD" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        /* CSS RESET UNTUK TAMPILAN FULL SCREEN */
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+            font-family: 'Inter', sans-serif; 
+        }
+
+        body { 
+            /* GRADASI BIRU MUDA KE BIRU TOSCA */
+            background: linear-gradient(135deg, #87CEEB 0%, #40E0D0 100%);
+            background-attachment: fixed;
+            color: #1a1a1a; 
+            display: flex; 
+            justify-content: center; 
+            align-items: flex-start;
+            min-height: 100vh; 
+            width: 100%;
+            padding-top: 60px;
+        }
+
+        .container { 
+            width: 90%; 
+            max-width: 450px; 
+            text-align: center; 
+            z-index: 1; 
+        }
+
+        /* Gaya Logo Bulat */
+        .profile-img {
+            width: 96px; 
+            height: 96px; 
+            border-radius: 50%;
+            margin-bottom: 16px; 
+            border: 3px solid rgba(255, 255, 255, 0.7);
+            object-fit: cover;
+            background: white;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        h1 { 
+            font-size: 22px; 
+            font-weight: 700; 
+            margin-bottom: 8px; 
+            letter-spacing: -0.5px; 
+        }
+
+        p.bio { 
+            font-size: 15px; 
+            margin-bottom: 35px; 
+            opacity: 0.85; 
+            font-weight: 500;
+        }
+
+        .links-container { 
+            display: flex; 
+            flex-direction: column; 
+            gap: 14px; 
+        }
+        
+        /* Tombol Efek Glassmorphism (Kaca Bening) */
+        .link-card {
+            background: rgba(255, 255, 255, 0.45);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            padding: 16px; 
+            border-radius: 15px;
+            text-decoration: none; 
+            color: #1a1a1a; 
+            font-weight: 600;
+            font-size: 15px;
+            transition: all 0.25s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .link-card:hover { 
+            background: rgba(255, 255, 255, 0.75); 
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+
+        .social-icons { 
+            margin-top: 45px; 
+            display: flex; 
+            justify-content: center; 
+            gap: 30px; 
+        }
+
+        .social-icons a { 
+            color: #1a1a1a; 
+            font-size: 24px; 
+            opacity: 0.8; 
+            transition: 0.3s; 
+        }
+
+        .social-icons a:hover { 
+            opacity: 1; 
+            transform: scale(1.2); 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="https://lh3.googleusercontent.com/u/0/d/1Z1Pk5fW79Ytk4Bn-umtBmLKZ0tMxc7uD" alt="Mahasiswa Undip Logo" class="profile-img">
+        
+        <h1>Mahasiswa Undip Id</h1>
+        <p class="bio">Komunitas & Informasi Terupdate Mahasiswa Undip</p>
+
+        <div class="links-container">
+            <a href="https://wa.me/nomoranda" class="link-card">Grup WhatsApp Mahasiswa</a>
+            <a href="#" class="link-card">Informasi Akademik</a>
+            <a href="#" class="link-card">Merchandise Resmi</a>
+            <a href="#" class="link-card">Cek Kalender Pendidikan</a>
+        </div>
+
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+    </div>
+
+</body>
+</html>
