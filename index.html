@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <style>
-        /* CSS RESET & FULL SCREEN OPTIMIZATION */
+        /* CSS RESET UNTUK TAMPILAN FULL SCREEN */
         * { 
             margin: 0; 
             padding: 0; 
@@ -21,11 +21,15 @@
         }
 
         body { 
-            /* GRADASI MERAH KE BIRU */
-            /* Menggunakan warna Crimson Red ke Royal Blue */
-            background: linear-gradient(135deg, #e63946 0%, #1d3557 100%);
+            /* GRADASI WARNA BARU: PINK -> UNGU -> BIRU (KIRI KE KANAN) */
+            /* Menggunakan linear-gradient 90deg untuk arah kiri ke kanan */
+            background: linear-gradient(90deg, #ff9a9e 0%, #fad0c4 10%, #fad0c4 20%, #ff8177 30%, #ff867a 40%, #ff8c7f 50%, #f99185 60%, #cf91ff 70%, #afe3ff 80%, #9be15d 90%, #00cdac 100%);
+            
+            /* Versi gradasi yang lebih halus dan simpel (Pink-Purple-Blue) */
+            background: linear-gradient(90deg, #ec4899 0%, #8b5cf6 50%, #3b82f6 100%);
+            
             background-attachment: fixed;
-            color: white; /* Diubah kembali ke putih agar kontras dengan warna gelap */
+            color: #ffffff; /* Warna teks utama diubah ke putih agar kontras */
             display: flex; 
             justify-content: center; 
             align-items: flex-start;
@@ -41,16 +45,16 @@
             z-index: 1; 
         }
 
-        /* Gaya Logo */
+        /* Gaya Logo Bulat */
         .profile-img {
             width: 96px; 
             height: 96px; 
             border-radius: 50%;
             margin-bottom: 16px; 
-            border: 3px solid rgba(255, 255, 255, 0.4);
+            border: 3px solid rgba(255, 255, 255, 0.8); /* Border putih lebih tegas */
             object-fit: cover;
             background: white;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 25px rgba(0,0,0,0.15);
         }
 
         h1 { 
@@ -58,7 +62,7 @@
             font-weight: 700; 
             margin-bottom: 8px; 
             letter-spacing: -0.5px; 
-            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            color: #ffffff; /* Pastikan judul warna putih */
         }
 
         p.bio { 
@@ -66,6 +70,7 @@
             margin-bottom: 35px; 
             opacity: 0.9; 
             font-weight: 500;
+            color: #ffffff; /* Pastikan bio warna putih */
         }
 
         .links-container { 
@@ -74,27 +79,27 @@
             gap: 14px; 
         }
         
-        /* Tombol Glassmorphism (Kaca Gelap/Terang Adaptif) */
+        /* Tombol Efek Glassmorphism (Kaca Bening) */
         .link-card {
-            background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.2); /* Sedikit lebih gelap agar terlihat di BG terang */
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
             padding: 16px; 
             border-radius: 15px;
             text-decoration: none; 
-            color: white; 
+            color: #ffffff; /* Warna teks tombol putih */
             font-weight: 600;
             font-size: 15px;
             transition: all 0.25s ease;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
         }
 
         .link-card:hover { 
-            background: rgba(255, 255, 255, 0.25); 
+            background: rgba(255, 255, 255, 0.4); 
             transform: translateY(-3px);
-            border: 1px solid rgba(255, 255, 255, 0.4);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            border: 1px solid rgba(255, 255, 255, 0.5);
         }
 
         .social-icons { 
@@ -105,7 +110,7 @@
         }
 
         .social-icons a { 
-            color: white; 
+            color: #ffffff; /* Warna ikon sosial media putih */
             font-size: 24px; 
             opacity: 0.8; 
             transition: 0.3s; 
@@ -126,16 +131,16 @@
         <p class="bio">Komunitas & Informasi Terupdate Mahasiswa Undip</p>
 
         <div class="links-container">
-            <a href="#" class="link-card">Grup WhatsApp Mahasiswa</a>
+            <a href="https://wa.me/nomoranda" class="link-card">Grup WhatsApp Mahasiswa</a>
             <a href="#" class="link-card">Informasi Akademik</a>
             <a href="#" class="link-card">Merchandise Resmi</a>
             <a href="#" class="link-card">Cek Kalender Pendidikan</a>
         </div>
 
         <div class="social-icons">
-            <a href="#"><i class="https://instagram.com/mahasiswaundip.id"></i></a>
-            <a href="#"><i class="https://www.tiktok.com/@mahasiswaundip.id"></i></a>
-            <a href="#"><i class="mahasiswaundip.id@gmail.com"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fa-regular fa-envelope"></i></a>
         </div>
     </div>
 
